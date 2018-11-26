@@ -1,0 +1,48 @@
+/*
+ * Juvantha Crawford
+ * Ms.McCaffery
+ * ICUS3
+ * Description- Write a program that ask 3 simple math problems. If the user is incorrect the computer will outut the crrect number*/
+import java.util.*;
+public class practicedecisions
+  
+{
+  public static void main(String[] args)
+  {
+    Scanner myInput = new Scanner(System.in); //Creating new scanner object
+     Random random = new Random(); //Creating new random input
+    
+     //Declaring random variables
+int num1 = random.nextInt(20)+1;
+int num2 = random.nextInt(15)+1;
+
+//Declaring Variables
+int num3 = (num1+num2);
+int num4 = (num1*num2);
+int num5 = (num1/num2);
+int num6 = (num1-num2);
+int num7 = (num2-num1);
+    // Question 1
+    System.out.println("What is " + num1 + "+" + num2);
+  
+    int anw = myInput.nextInt();
+    // Answer to Question 1
+    System.out.println("Sorry the answer of " + num1 + "+" + num2 + " " + "is" + "=" +num3);
+    // Question 2
+    System.out.println("What is " +num1+ "*" + num2);
+    
+    int anw2= myInput.nextInt();
+    // Answer to Question 2
+    System.out.println("Sorry The answer is " + num1 + "*" + num2+ "=" +num4);
+    //Asking Question 3
+    System.out.println("What is " + num2 + "-" + num1);
+    
+ 
+    
+    int anw5= myInput.nextInt();
+    // Answer to Question 5
+    System.out.println("Sorry The answer is" +num2 + "-" + num1 + "=" +num7);
+    //closing scanner 
+    myInput.close();
+  }//Close main
+}//Close class
